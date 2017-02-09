@@ -1,0 +1,138 @@
+.viewport {
+    width: 100%;
+    height: 100%;
+    // 导航
+    .navs {
+        height: 100%;
+        width: 17.5rem;
+        position: fixed;
+        transform: translate(-100%);
+        transition: all 0.5s 0s;
+        ul {
+            li {
+                padding: .75rem .5rem;
+                font-weight: 700;
+            }
+        }
+    }
+    //头部
+    .container {
+        position: relative;
+        // top:0;
+        // float: right;
+        transform: translateY(0);
+        transition: all 0.5s 0s;
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            position: absolute;
+            z-index: 100;
+            display: none;
+        }
+        .header {
+            width: 100%;
+            height: 2.5rem;
+            span {
+                padding: .25rem; // 10px
+            }
+            h2 {
+                text-align: center;
+                padding: .25rem 0 .25rem 0;
+                width: 100%;
+            }
+            .menu {
+                float: left;
+            }
+            .search {
+                float: right;
+            }
+        }
+        //轮播图
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            background-color: #ccc;
+            h3 {
+                position: absolute;
+                width: 100%;
+                height: 1.75rem;
+                line-height: 1.75rem;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: pink;
+            }
+            .swiper-pagination {
+                span {
+                    float: right;
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: #fff;
+                }
+            }
+        }
+        // 动画列图
+        .mainContent {
+            .tab-title {
+                ul {
+                    width: 100%;
+                    display: flex;
+                }
+                li {
+                    float: left;
+                    flex-grow: 1;
+                    text-align: center;
+                    padding: .5rem 0 .5rem 0;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                }
+                .active {
+                    color: red;
+                    border-bottom: 3px solid red;
+                }
+            }
+            .tab-content {
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                li {
+                    width: 50%;
+                    text-align: center;
+                    // position: relative;
+                    box-sizing: border-box;
+                    color: skyblue;
+                    .cover {
+                        position: relative;
+                        padding: .25rem .375rem 0;
+                        h4 {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, .5);
+                        }
+                    }
+                }
+            }
+        }
+        .lianzai {
+            padding: 0 .5rem;
+            li {
+                padding: 1rem 0;
+                border-bottom: 1px solid #ccc;
+                .leftimg {
+                    width: 5rem;
+                    float: left;
+                }
+                .rightdesc {
+                    padding-left: 5.5rem;
+                    p {
+                        font-size: .45rem;
+                        color: #044;
+                    }
+                }
+            }
+        }
+    }
+}

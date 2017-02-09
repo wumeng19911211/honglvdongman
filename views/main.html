@@ -1,0 +1,36 @@
+<!-- 轮播图 -->
+<div class="banner clearfix">
+    <div class="swiper-container">
+        <div class="swiper-wrapper clearfix">
+            <div class="swiper-slide" ng-repeat='val in bannerinfo'>
+                <a ng-href="{{val.url}}">
+                    <img ng-src="{{val.img}}" alt="">
+                    <h3 class="title">{{val.title}}</h3>
+            </div>
+            </a>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!-- 动画列图 -->
+<div class="mainContent clearfix">
+    <div class="tab-title">
+        <ul class="clearfix">
+            <li class="active">新增连载</li>
+            <li>新增完结</li>
+            <li>推荐连载</li>
+            <li>推荐完结</li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <ul>
+            <li ng-repeat='val in animateinfo'>
+                <div class="cover">
+                    <img ng-src="{{val.img}}" alt="">
+                    <h4>{{val.update}}</h4>
+                </div>
+                <h5>{{val.name}}</h5>
+            </li>
+        </ul>
+    </div>
+</div>

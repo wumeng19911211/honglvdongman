@@ -1,0 +1,81 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+h2,
+h3,
+h4,
+h5,
+ul,
+dl,
+dt,
+dd,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: roman, Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    background-color: #f8f8f8;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.viewport {
+    max-width: 640px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.collapse {
+    transform: translate(100%);
+}
+
+// 清除浮动
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/* icon图标 */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+

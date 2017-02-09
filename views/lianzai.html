@@ -1,0 +1,15 @@
+<ul class="lianzai">
+    <li ng-repeat='val in info' class="clearfix">
+        <a href="{{val.url}}">
+            <div class="leftimg">
+                <img ng-src="{{val.img}}" alt="">
+            </div>
+            <div class="rightdesc">
+                <h4 class="title">{{val.name}}</h4>
+                <p class="episode">{{val.episode}}</p>
+                <p class="udTime">{{val.updateTime}}</p>
+                <p class="dlCount">下载次数:{{val.downloadCount}}</p>
+            </div>
+        </a>
+    </li>
+</ul>

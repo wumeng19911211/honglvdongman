@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>红旅动漫</title>
+    <!-- css -->
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/libs/swiper/swiper.css">
+    <!-- 第三方库 -->
+    <script src="./public/libs/angular/angular.min.js"></script>
+    <script src="./public/libs/angular/angular-route.js"></script>
+    <script src="./public/libs/jquery/jquery-3.1.1.js"></script>
+    <script src="public/libs/swiper/swiper.jquery.js"></script>
+    <script src="public/fonts/iconfont.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controller.js"></script>
+</head>
+
+<body ng-app='Hldm'>
+    <div class="viewport clearfix">
+        <!-- 导航 -->
+        <div ng-class="{navs:true,collapse: collapsed}">
+            <div class="logoimg">
+                <a href="#/main" ng-click='toggle()'>
+                    <img src="public/images/logo.png" height="100" width="230" alt="">
+                </a>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li ng-click="toggle()"><a href='#/lianzai'>连载动漫</a></li>
+                    <li ng-click="toggle()"><a href='#/topic'>专题列表</a></li>
+                    <li ng-click="toggle()">关于</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 内容 -->
+        <div ng-class="{container:true,collapse:collapsed}">
+            <div ng-class="{mask:true,hide:hidden}">
+                
+            </div>
+            <!-- 头部 -->
+            <div class="header clearfix">
+                <span class="menu" ng-click="toggle()">
+                    <svg class="icon" >
+                      <use xlink:href="#icon-meun"></use>
+                    </svg>
+                </span>
+                <span class="search">
+                    <svg class='icon'>
+                        <use xlink:href='#icon-sousuo_sousuo'></use>
+                    </svg>
+                </span>
+                <h2>{{title}}</h2>
+            </div>
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+
+</html>
